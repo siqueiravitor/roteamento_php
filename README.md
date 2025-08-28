@@ -100,9 +100,7 @@ redirect('cadastrar'); // se houver alias/suporte a rota relativa
 
 Organização de arquivos
 
-Evite conflito de nomes entre *Controller* e *View*.
-
-- ❌ Incorreto (conflito):
+- ✅ Correto desde que as rotas não apontem para a mesma url:
 ```bash
 Controller/unidades/cadastrar
 View/unidades/cadastrar
@@ -129,7 +127,6 @@ Boas práticas
 - Cada rota retorna apenas `view` ou `action`.
 - URLs são únicas. `view` e `action` podem compartilhar nome, mas não a mesma URL.
 - Use `redirect()` para clareza de navegação após POST/ações.
-- Diferencie nomes entre Controller e View para evitar ambiguidades.
 - Centralize rotas principais e telas comuns em `index.php`.
 
 ---
