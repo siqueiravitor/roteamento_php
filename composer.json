@@ -1,0 +1,17 @@
+{
+    "name": "siqueiravitor/roteamento_php",
+    "description": "Projeto de roteamento em PHP procedural",
+    "type": "project",
+    "company": "MenteDev.",
+    "authors": [
+        {
+            "name": "Vitor Siqueira",
+            "email": "contato@vitorsiqueira.com",
+            "role": "Software Engineer",
+            "homepage": "https://vitorsiqueira.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
