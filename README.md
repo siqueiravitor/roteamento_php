@@ -1,3 +1,31 @@
+# Iniciando o projeto
+Para rodar o projeto localmente, use o servidor embutido do PHP apontando para a pasta `public`.
+
+## 1. Inicie o servidor
+
+No terminal, execute:
+```bash
+php -S localhost:80 -t public
+```
+- `localhost:80` → O projeto ficará disponível no navegador acessando:
+http://localhost
+- `-t public` → Define que a pasta public é o diretório raiz do servidor.
+
+## 2. Estrutura recomendada
+
+Sua estrutura deve estar assim:
+```bash
+project-root/
+├── public/        # Pasta raiz do servidor
+│   ├── index.php  # Arquivo inicial
+│   └── ...
+├── app/
+│   ├── Controller/
+│   ├── View/
+│   └── Routes/
+└── README.md
+```
+
 # Sistema de Rotas
 
 Este projeto utiliza uma função route() para mapear URLs para arquivos de views (Front-end) ou actions (Back-end). <br>
